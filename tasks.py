@@ -1,21 +1,18 @@
+
 print('task1')
 u = int()
 for u in range(1, 6):
     print(u, 0)
 
 print('task2')
-n = input('input 10-digit number')
-n = int(n)
-if n < 1000000000:
-    print('incorrect number')
-if n > 9999999999:
-    print('incorrect number')
-i = 0
-while n > 0:
-    if n % 10 == 5:
-        i = i + 1
-    n = n // 10
-print(i)
+y = 0
+
+for m in range(10):
+    x = input('digit')
+    x = int(x)
+    if x == 5: y = y + 1
+    continue
+print(y)
 
 print('task3')
 summa = 0
@@ -31,7 +28,7 @@ for i in range(1, 10):
 print(m)
 
 print('task5')
-n = input('your number to digit per line')
+n = input('your number to print digits per line')
 n = int(n)
 while n > 0:
     digit = n % 10
@@ -57,3 +54,33 @@ while number > 1:
 print(mult_of_digits)
 
 print('task8')
+num = input('your number to id 5')
+num = int(num)
+while num > 0:
+    if int(num) % 10 == 5:
+        print('there is 5')
+        break
+    num = num / 10
+else:
+    print('there is no 5')
+
+print('task9')
+numer = input('your number to id the biggest diget')
+numer = int(numer)
+zet = 0
+while numer > 0:
+    if numer % 10 > zet:
+        zet = numer % 10
+    numer = numer / 10
+zet = int(zet)
+print(zet)
+
+print('task10')
+n = input('input number to count digit 5 in it')
+n = int(n)
+i = 0
+while n > 0:
+    if n % 10 == 5:
+        i = i + 1
+    n = n // 10
+print(i)
