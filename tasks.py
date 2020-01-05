@@ -22,9 +22,8 @@ print(summa)
 
 print('task4')
 m = 1
-for i in range(1, 10):
-    i = i + 1
-    m = m * i
+for i in range(1, 11):
+        m = m * i
 print(m)
 
 print('task5')
