@@ -19,7 +19,7 @@ def f_max_prime_devider(x):
     for i in range (0, len(list)-1):
         if f_prime(list[i]): list_2 == list_2.insert(i, list[i])
     return list_2[0]
-print('самый большой простой делитель', ':', f_max_prime_devider(779))
+print('максимальный простой делитель без остатка', ':', f_max_prime_devider(779))
 
 def f_max_devider(x):
     list = []

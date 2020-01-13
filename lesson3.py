@@ -66,11 +66,17 @@ p = list(map(str, o))
 q = set(p)
 print(len(q))
 
+#r = {z: p.count(z) for z in p}
+#s = list(r.items())
+#def keyFunc(item):
+#    return item[1]
+#s.sort(key=keyFunc, reverse=True)
+#t = s[0:5]
+#print(t)
+
 r = {z: p.count(z) for z in p}
 s = list(r.items())
 
-def keyFunc(item):
-    return item[1]
-s.sort(key=keyFunc, reverse = True)
+s.sort(key=lambda x: x[1], reverse=True)
 t = s[0:5]
 print(t)
